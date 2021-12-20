@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <div id="flash"></div>
+    <div id="countdown">...</div>
+    <div id="start" class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold">Austin & Camryn's<br />Wedding Photo Booth</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+                Thank you for joining us this evening! Press the button below to begin making memories with
+                us!
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" onclick="start()" class="btn btn-primary btn-lg px-4 me-sm-3">
+                    <i class="bi bi-camera"></i>
+                    BEGIN
+                </button>
+            </div>
+        </div>
+        <div class="overflow-hidden">
+            <div class="container px-5">
+                <img src="./pictures/camryn-austin-91.jpg" style="max-width:50%;" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+    </div>
+    <video></video>
+    <audio preload="auto">
+        <source src="./audio/track.ogg" type="audio/ogg">
+    </audio>
+</body>
+</html>
